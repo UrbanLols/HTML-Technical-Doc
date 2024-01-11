@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>HTML Technical Documentation</title>
+
+<style>
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f2f2f2;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar li{
+  list-style: none;
+  font-size: 20px;
+  font-family: monospace;
+  border-top: 1px solid;
+  margin: 20px
+}
+
+#navbar a{
+  text-decoration: none;
+}
+
+header {
+  font-size: 30px;
+}
+
+body{
+  left: 300px;
+  position: absolute;
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+
+</style>
+
+  </head>
+    <body>
+
+      <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
+          <li><a class="nav-link" href="#HTML_Comments">HTML Comments</a></li>
+          <li><a class="nav-link" href="#HTML_Class-CSS">HTML Class-CSS</a></li>
+          <li><a class="nav-link" href="#More_Information">More Information</a></li>
+        </ul>
+      </nav>
+
+      <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p> HTML is the standard markup language for creating Web pages.</p>
+
+            <ul>
+              <li>HTML stands for hypertext markup language</li>
+              <li>HTML describes the structure of a Web page</li>
+              <li>HTML consists of a series of elements</li>
+              <li>HTML elements tell the browser how to display content</li>
+              <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+            </ul>
+
+            <p> Here is an example of some HTML code.</p>
+
+            <code>  	&lt!DOCTYPE html>
+                    	&lt;html>
+                    	&lt;head>
+                    	&lt;title> I'm a title  	&lt;/title>
+                    	&lt;/head>
+                    	&lt;body>
+
+                    	&lt;h1> The First Heading  	&lt;h1>
+                    	&lt;p> The first paragraph.  	&lt;/p>
+
+                    	&lt;/body>
+                    	&lt;/html>  	</code>
+
+        <h2>Example explained</h2>     
+
+        <ul>
+          <li>The &lt;!DOCTYPE html> declaration defines that the document is an HTML5 document</li>
+          <li>The &lt;html> element is the root element of an HTML page</li>
+          <li>The &lt;head> element contains the meta information about the HTML page</li>
+          <li>The &lt;title> element specifies a title for the HTML page (Which is shown in the browser's title bar, or in the page's tab)</li>
+          <li>The &lt;body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+          <li>The &lt;h1> element defines a large heading</li>
+          <li>The &lt;p> element defines a paragraph</li>
+          </article>
+        </section>
+
+        <section class="main-section" id="HTML_Attributes">
+          <header>HTML Attributes</header>
+          <article>
+            <p>All HTML elements can have <strong>attributes</strong>. Those attributes provide <strong>additional information</strong> about elements, and are always specified in <strong>the start tag</strong>. Attributes usually come in name/value pairs like: <strong>name="value"</strong>.
+
+            <p>A couple examples:</p>
+            <p>&lt;a href="https://www.example.com">Visit Example&lt;/a></p>
+            <p>&lt;img src="example_img.jpg"><p>
+
+            <h3>The href attribute</h3>
+            <p>The &lt;a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.</p>
+            <h3>The src attribute</h3>
+            <p>The &lt;img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</p>
+            </article>
+          </section>
+
+        <section class="main-section" id="HTML_Comments">
+          <header>HTML Comments</header>
+          <article>
+
+            <p>HTML comments are not displayed in the browser, but they can help document your HTML source code. You can add comments to your HTML source by using the following syntax:</p>
+
+          <code> &lt;!-- "!--" declares the beginning of the comment, and "-->" declares the end of the comment --> </code>
+          </article>
+        </section>
+        
+        <section class="main-section" id="HTML_Class-CSS">
+          <header>HTML Class-CSS</header>
+            <article>
+
+            <p>Cascading Style Sheets (CSS) is used to format the layout of a webpage. With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
+
+            <h3>Inline CSS</h3>
+
+<p>An inline CSS is used to apply a unique style to a single HTML element.An inline CSS uses the style attribute of an HTML element.The following example sets the text color of the &lt;h1> element to blue, and the text color of the &lt;p> element to red:</p>
+
+<p> <code>  &lt;h1 style="color:blue;">A Blue Heading&lt;/h1>
+&lt;p style="color:red;">A red paragraph.</code></p>
+
+        <h3>Internal CSS</h3>
+
+        <p>An internal CSS is used to define a style for a single HTML page. An internal CSS is defined in the &lt;head> section of an HTML page, within a &lt;style> element. The following example sets the text color of ALL the &lt;h1> elements (on that page) to blue, and the text color of ALL the &lt;p> elements to red. In addition, the page will be displayed with a "powderblue" background color:</p>
+
+        <p><code> &lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+&lt;/style>
+&lt;/head>
+&lt;body>
+
+&lt;h1>This is a heading&lt;/h1>
+&lt;p>This is a paragraph.&lt;/p>
+
+&lt;/body>
+&lt;/html> </code></p>
+
+          <h3>External CSS</h3>
+          <p>An external style sheet is used to define the style for many HTML pages.To use an external style sheet, add a link to it in the &lt;head> section of each HTML page:</p>
+
+          <p><code> &lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;link rel="stylesheet" href="styles.css">
+&lt;/head>
+&lt;body>
+
+&lt;h1>This is a heading&lt;/h1>
+&lt;p>This is a paragraph.&lt;/p>
+
+&lt;/body>
+&lt;/html> </code></p>
+          </article>
+        </section>
+
+        <section class="main-section" id="More_Information">
+          <header>More Information</header>
+          <article>
+
+            <p>There is a lot of information on HTML and CSS styling. If you would like to learn more about it consider checking out this <a href="https://www.w3schools.com/html/default.asp">link</a>. It has all the possible information you could want for the subject. 
+          </article>
+        </section>
+      </main>
+    </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
